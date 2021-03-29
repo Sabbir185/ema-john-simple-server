@@ -67,5 +67,8 @@ client.connect(err => {
 }); // this is the end of client connection
 
 
+app.get('/',(req, res)=>{
+  res.send('Welcome to server api');
+})
 
 app.listen(process.env.PORT || 5000);
